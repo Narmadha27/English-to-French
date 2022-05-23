@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background:#1f618d;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.container{
+    width: 690px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    margin-top: 40px;
+}
+.wrapper{
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+.wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+.text-input textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 20px 15px;
+    resize: none;
+}
+.container label{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.container input{
+    margin: 10px 5px;
+}
+.container button{
+    background-color: #1f618d;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+.container #btnsearch{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background: #1f618d;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+}
