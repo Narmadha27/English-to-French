@@ -7,7 +7,7 @@ btn.addEventListener("click",()=>{
         let regexp=new RegExp(english[i],"ig");
         textarea.value=textarea.value.replace(regexp,french[i]); 
     }
-};
+});
 input.addEventListener('change',()=>{
     let files = input.files;
     let file= files[0];
@@ -27,12 +27,15 @@ function count(){
     let len=arrstr.length;
     let input=document.getElementById("inputtext").value;
     for(let i=0;i<len;i++){
-        if(arrstr[i].match(input) && (arrstr[i].length==input.length){
+        if(arrstr[i].match(input) && (arrstr[i].length==input.length)){
             count=count+1;
         }
     }
     alert(count)
 }
+
+
+
 
 
 
