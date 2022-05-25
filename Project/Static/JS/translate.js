@@ -27,7 +27,7 @@ function count(){
     let len=arrstr.length;
     let input=document.getElementById("inputtext").value;
     for(let i=0;i<len;i++){
-        if(arrstr[i].match(input) && arrstr[i].length==input.length){
+        if(arrstr[i].match(input) && (arrstr[i].length==input.length){
             count=count+1;
         }
     }
