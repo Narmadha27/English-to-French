@@ -1,7 +1,7 @@
 let input=document.querySelector('input');
 let textarea=document.querySelector('.target');
-let btn=document.getElementById("btnsearch");
-btn.addEventListener("click",()=>{
+let btn=document.getElementById('btntranslate')
+btn.addEventListener('click',()=>{
     let len=english.length;
     for(let i=0;i<len;i++){
         let regexp=new RegExp(english[i],"ig");
@@ -14,29 +14,24 @@ input.addEventListener('change',()=>{
     let reader=new FileReader();
     reader.onload = (e) => {
         const file = e.target.result;
-        const lines = file.split(/\n/);
+        const lines = file.split('\n');
         textarea.value=lines.join('\n');
     };
-    reader.readAsText(file);    
+    reader.readAsText(file);
 });
 function count(){
-    let textarea=document.querySelector("textarea");
+    let textarea=document.querySelector(".target");
     let str=textarea.value;
     let arrstr=str.split(" ");
     let count=0;
     let len=arrstr.length;
-    let input=document.getElementById("inputtext").value;
-    let regexp=new RegExp(input,"ig");
+    let input=document.getElementById("inputtext");
+    let ip=input.value;
+    let regexp=new RegExp(ip,"ig");
     for(let i=0;i<len;i++){
-        if(arrstr[i].match(regexp) && (arrstr[i].length==regexp.length)){
+        if(arrstr[i].match(regexp) && (arrstr[i].length==ip.length)){
             count=count+1;
         }
     }
-    alert(count)
+    alert(count);
 }
-
-
-
-
-
-
