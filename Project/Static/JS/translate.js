@@ -26,8 +26,9 @@ function count(){
     let count=0;
     let len=arrstr.length;
     let input=document.getElementById("inputtext").value;
+    let regexp=new RegExp(input,"ig");
     for(let i=0;i<len;i++){
-        if(arrstr[i].match(input) && (arrstr[i].length==input.length)){
+        if(arrstr[i].match(regexp) && (arrstr[i].length==regexp.length)){
             count=count+1;
         }
     }
