@@ -1,6 +1,6 @@
 let input=document.querySelector('input');
 let textarea=document.querySelector('.target');
-let btn=document.getElementById('btntranslate')
+let btn=document.getElementById('btntranslate');
 btn.addEventListener('click',()=>{
     let len=english.length;
     for(let i=0;i<len;i++){
@@ -13,14 +13,12 @@ input.addEventListener('change',()=>{
     let file= files[0];
     let reader=new FileReader();
     reader.onload = (e) => {
-        const file = e.target.result;
-        const lines = file.split('\n');
-        textarea.value=lines.join('\n');
+        let file = e.target.result;
+        textarea.value=file;
     };
     reader.readAsText(file);
 });
 function count(){
-    let textarea=document.querySelector(".target");
     let str=textarea.value;
     let arrstr=str.split(" ");
     let count=0;
